@@ -1,0 +1,60 @@
+version: '3.8'
+
+services:
+  # ─── Airflow ─────────────────────────────────────────────────────────
+  airflow-webserver:
+    image: apache/airflow:2.7.3
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
+      AIRFLOW__WEBSERVER__SECRET_KEY: clinical_etl_secret_key
+      DEMO_MODE: "true"
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/plugins:/opt/airflow/plugins
+      - ./src:/opt/airflow/src
+      - ./outputs:/opt/airflow/outputs
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    command: webserver
+
+  airflow-scheduler:
+    image: apache/airflow:2.7.3
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./src:/opt/airflow/src
+    depends_on:
+      - postgres
+    command: scheduler
+
+  # ─── PostgreSQL (Airflow metadata DB) ────────────────────────────────
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  # ─── Local ETL Runner (no Airflow) ───────────────────────────────────
+  etl-runner:
+    build: .
+    command: python3 scripts/run_pipeline.py --mode full
+    volumes:
+      - .:/app
+      - ./outputs:/app/outputs
+    environment:
+      DEMO_MODE: "true"
+      OUTPUT_DIR: "/app/outputs"
+
+volumes:
+  postgres_data:

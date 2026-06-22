@@ -1,0 +1,91 @@
+2026-06-21 20:10:49 | INFO     | src.validators.data_quality_validator | DataQualityValidator initialized | threshold=95%
+2026-06-21 20:10:49 | INFO     | src.validators.data_quality_validator | ============================================================
+2026-06-21 20:10:49 | INFO     | src.validators.data_quality_validator | RUNNING FULL DATA QUALITY VALIDATION SUITE
+2026-06-21 20:10:49 | INFO     | src.validators.data_quality_validator | ============================================================
+2026-06-21 20:10:49 | INFO     | src.validators.data_quality_validator | 
+────────────────────────────────────────────────────────────
+2026-06-21 20:10:49 | INFO     | src.validators.data_quality_validator |   ✅ patients             | Score: 100.00% | Records: 1,500
+2026-06-21 20:10:49 | INFO     | src.validators.data_quality_validator |   ❌ encounters           | Score: 87.50% | Records: 2,400
+2026-06-21 20:10:49 | INFO     | src.validators.data_quality_validator |   ❌ labs                 | Score: 75.00% | Records: 4,500
+2026-06-21 20:10:49 | INFO     | src.validators.data_quality_validator |   ✅ billing              | Score: 100.00% | Records: 2,400
+2026-06-21 20:10:49 | INFO     | src.validators.data_quality_validator |   ✅ icu_vitals           | Score: 100.00% | Records: 15,000
+2026-06-21 20:10:49 | INFO     | src.validators.data_quality_validator | ────────────────────────────────────────────────────────────
+2026-06-21 20:10:49 | INFO     | src.validators.data_quality_validator |   OVERALL QUALITY: 92.50% | Gate: FAILED ❌
+2026-06-21 20:10:49 | INFO     | src.validators.data_quality_validator | ============================================================
+2026-06-21 20:10:49 | INFO     | src.validators.data_quality_validator |   Quality report saved: outputs/data_quality_report.json
+2026-06-21 20:11:14 | INFO     | src.validators.data_quality_validator | DataQualityValidator initialized | threshold=95%
+2026-06-21 20:11:14 | INFO     | src.validators.data_quality_validator | ============================================================
+2026-06-21 20:11:14 | INFO     | src.validators.data_quality_validator | RUNNING FULL DATA QUALITY VALIDATION SUITE
+2026-06-21 20:11:14 | INFO     | src.validators.data_quality_validator | ============================================================
+2026-06-21 20:11:14 | INFO     | src.validators.data_quality_validator | 
+────────────────────────────────────────────────────────────
+2026-06-21 20:11:14 | INFO     | src.validators.data_quality_validator |   ✅ patients             | Score: 100.00% | Records: 1,500
+2026-06-21 20:11:14 | INFO     | src.validators.data_quality_validator |   ❌ encounters           | Score: 87.50% | Records: 2,400
+2026-06-21 20:11:14 | INFO     | src.validators.data_quality_validator |   ❌ labs                 | Score: 75.00% | Records: 4,500
+2026-06-21 20:11:14 | INFO     | src.validators.data_quality_validator |   ✅ billing              | Score: 100.00% | Records: 2,400
+2026-06-21 20:11:14 | INFO     | src.validators.data_quality_validator |   ✅ icu_vitals           | Score: 100.00% | Records: 15,000
+2026-06-21 20:11:14 | INFO     | src.validators.data_quality_validator | ────────────────────────────────────────────────────────────
+2026-06-21 20:11:14 | INFO     | src.validators.data_quality_validator |   OVERALL QUALITY: 92.50% | Gate: FAILED ❌
+2026-06-21 20:11:14 | INFO     | src.validators.data_quality_validator | ============================================================
+2026-06-21 20:11:14 | INFO     | src.validators.data_quality_validator |   Quality report saved: outputs/data_quality_report.json
+2026-06-21 20:11:35 | INFO     | src.validators.data_quality_validator | DataQualityValidator initialized | threshold=95%
+2026-06-21 20:11:35 | INFO     | src.validators.data_quality_validator | ============================================================
+2026-06-21 20:11:35 | INFO     | src.validators.data_quality_validator | RUNNING FULL DATA QUALITY VALIDATION SUITE
+2026-06-21 20:11:35 | INFO     | src.validators.data_quality_validator | ============================================================
+2026-06-21 20:11:35 | INFO     | src.validators.data_quality_validator | 
+────────────────────────────────────────────────────────────
+2026-06-21 20:11:35 | INFO     | src.validators.data_quality_validator |   ✅ patients             | Score: 100.00% | Records: 1,500
+2026-06-21 20:11:35 | INFO     | src.validators.data_quality_validator |   ❌ encounters           | Score: 87.50% | Records: 2,400
+2026-06-21 20:11:35 | INFO     | src.validators.data_quality_validator |   ❌ labs                 | Score: 75.00% | Records: 4,500
+2026-06-21 20:11:35 | INFO     | src.validators.data_quality_validator |   ✅ billing              | Score: 100.00% | Records: 2,400
+2026-06-21 20:11:35 | INFO     | src.validators.data_quality_validator |   ✅ icu_vitals           | Score: 100.00% | Records: 15,000
+2026-06-21 20:11:35 | INFO     | src.validators.data_quality_validator | ────────────────────────────────────────────────────────────
+2026-06-21 20:11:35 | INFO     | src.validators.data_quality_validator |   OVERALL QUALITY: 92.50% | Gate: FAILED ❌
+2026-06-21 20:11:35 | INFO     | src.validators.data_quality_validator | ============================================================
+2026-06-21 20:11:35 | INFO     | src.validators.data_quality_validator |   Quality report saved: outputs/data_quality_report.json
+2026-06-21 20:12:10 | INFO     | src.validators.data_quality_validator | DataQualityValidator initialized | threshold=95%
+2026-06-21 20:12:10 | INFO     | src.validators.data_quality_validator | ============================================================
+2026-06-21 20:12:10 | INFO     | src.validators.data_quality_validator | RUNNING FULL DATA QUALITY VALIDATION SUITE
+2026-06-21 20:12:10 | INFO     | src.validators.data_quality_validator | ============================================================
+2026-06-21 20:12:10 | INFO     | src.validators.data_quality_validator | 
+────────────────────────────────────────────────────────────
+2026-06-21 20:12:10 | INFO     | src.validators.data_quality_validator |   ✅ patients             | Score: 100.00% | Records: 1,500
+2026-06-21 20:12:10 | INFO     | src.validators.data_quality_validator |   ✅ encounters           | Score: 100.00% | Records: 2,400
+2026-06-21 20:12:10 | INFO     | src.validators.data_quality_validator |   ✅ labs                 | Score: 100.00% | Records: 4,500
+2026-06-21 20:12:10 | INFO     | src.validators.data_quality_validator |   ✅ billing              | Score: 100.00% | Records: 2,400
+2026-06-21 20:12:10 | INFO     | src.validators.data_quality_validator |   ✅ icu_vitals           | Score: 100.00% | Records: 15,000
+2026-06-21 20:12:10 | INFO     | src.validators.data_quality_validator | ────────────────────────────────────────────────────────────
+2026-06-21 20:12:10 | INFO     | src.validators.data_quality_validator |   OVERALL QUALITY: 100.00% | Gate: PASSED ✅
+2026-06-21 20:12:10 | INFO     | src.validators.data_quality_validator | ============================================================
+2026-06-21 20:12:10 | INFO     | src.validators.data_quality_validator |   Quality report saved: outputs/data_quality_report.json
+2026-06-21 20:15:25 | INFO     | src.validators.data_quality_validator | DataQualityValidator initialized | threshold=95%
+2026-06-21 20:15:25 | INFO     | src.validators.data_quality_validator | DataQualityValidator initialized | threshold=95%
+2026-06-21 20:15:25 | INFO     | src.validators.data_quality_validator | DataQualityValidator initialized | threshold=95%
+2026-06-21 20:15:25 | INFO     | src.validators.data_quality_validator | DataQualityValidator initialized | threshold=95%
+2026-06-21 20:15:25 | INFO     | src.validators.data_quality_validator | DataQualityValidator initialized | threshold=95%
+2026-06-21 20:15:25 | INFO     | src.validators.data_quality_validator | DataQualityValidator initialized | threshold=95%
+2026-06-21 20:15:25 | INFO     | src.validators.data_quality_validator | DataQualityValidator initialized | threshold=95%
+2026-06-21 20:15:25 | INFO     | src.validators.data_quality_validator | DataQualityValidator initialized | threshold=95%
+2026-06-22 20:30:42 | INFO     | src.validators.data_quality_validator | DataQualityValidator initialized | threshold=95%
+2026-06-22 20:30:42 | INFO     | src.validators.data_quality_validator | ============================================================
+2026-06-22 20:30:42 | INFO     | src.validators.data_quality_validator | RUNNING FULL DATA QUALITY VALIDATION SUITE
+2026-06-22 20:30:42 | INFO     | src.validators.data_quality_validator | ============================================================
+2026-06-22 20:30:42 | INFO     | src.validators.data_quality_validator | 
+────────────────────────────────────────────────────────────
+2026-06-22 20:30:42 | INFO     | src.validators.data_quality_validator |   ✅ patients             | Score: 100.00% | Records: 5,000
+2026-06-22 20:30:42 | INFO     | src.validators.data_quality_validator |   ✅ encounters           | Score: 100.00% | Records: 8,000
+2026-06-22 20:30:42 | INFO     | src.validators.data_quality_validator |   ✅ labs                 | Score: 100.00% | Records: 15,000
+2026-06-22 20:30:42 | INFO     | src.validators.data_quality_validator |   ✅ billing              | Score: 100.00% | Records: 8,000
+2026-06-22 20:30:42 | INFO     | src.validators.data_quality_validator |   ✅ icu_vitals           | Score: 100.00% | Records: 50,000
+2026-06-22 20:30:42 | INFO     | src.validators.data_quality_validator | ────────────────────────────────────────────────────────────
+2026-06-22 20:30:42 | INFO     | src.validators.data_quality_validator |   OVERALL QUALITY: 100.00% | Gate: PASSED ✅
+2026-06-22 20:30:42 | INFO     | src.validators.data_quality_validator | ============================================================
+2026-06-22 20:30:42 | INFO     | src.validators.data_quality_validator |   Quality report saved: outputs/data_quality_report.json
+2026-06-22 20:31:07 | INFO     | src.validators.data_quality_validator | DataQualityValidator initialized | threshold=95%
+2026-06-22 20:31:07 | INFO     | src.validators.data_quality_validator | DataQualityValidator initialized | threshold=95%
+2026-06-22 20:31:07 | INFO     | src.validators.data_quality_validator | DataQualityValidator initialized | threshold=95%
+2026-06-22 20:31:07 | INFO     | src.validators.data_quality_validator | DataQualityValidator initialized | threshold=95%
+2026-06-22 20:31:07 | INFO     | src.validators.data_quality_validator | DataQualityValidator initialized | threshold=95%
+2026-06-22 20:31:07 | INFO     | src.validators.data_quality_validator | DataQualityValidator initialized | threshold=95%
+2026-06-22 20:31:07 | INFO     | src.validators.data_quality_validator | DataQualityValidator initialized | threshold=95%
+2026-06-22 20:31:07 | INFO     | src.validators.data_quality_validator | DataQualityValidator initialized | threshold=95%

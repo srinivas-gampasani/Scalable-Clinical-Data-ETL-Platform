@@ -1,0 +1,50 @@
+2026-06-21 20:12:10 | INFO     | src.loaders.snowflake_loader   | SnowflakeLoader initialized | mode=DEMO/SQLite
+2026-06-21 20:12:10 | INFO     | src.loaders.snowflake_loader   |   Connected to demo SQLite: ./outputs/clinical_dw.db
+2026-06-21 20:12:10 | INFO     | src.loaders.snowflake_loader   |   ✓ Loaded 1,500 rows → raw_patients
+2026-06-21 20:12:10 | INFO     | src.loaders.snowflake_loader   |   ✓ Loaded 2,400 rows → raw_encounters
+2026-06-21 20:12:11 | INFO     | src.loaders.snowflake_loader   |   ✓ Loaded 4,500 rows → raw_labs
+2026-06-21 20:12:11 | INFO     | src.loaders.snowflake_loader   |   ✓ Loaded 2,400 rows → raw_billing
+2026-06-21 20:12:11 | INFO     | src.loaders.snowflake_loader   |   ✓ Loaded 3,600 rows → raw_appointments
+2026-06-21 20:12:11 | INFO     | src.loaders.snowflake_loader   |   ✓ Loaded 6,000 rows → raw_medications
+2026-06-21 20:12:11 | INFO     | src.loaders.snowflake_loader   |   ✓ Loaded 900 rows → raw_radiology
+2026-06-21 20:12:11 | INFO     | src.loaders.snowflake_loader   |   ✓ Loaded 15,000 rows → raw_icu_vitals
+2026-06-21 20:12:11 | INFO     | src.loaders.snowflake_loader   |   ✓ Loaded 500 rows → raw_staff
+2026-06-21 20:12:11 | INFO     | src.loaders.snowflake_loader   |   ✓ Loaded 2,400 rows → mart_patient_encounters
+2026-06-21 20:12:11 | INFO     | src.loaders.snowflake_loader   |   Pipeline run logged | Duration: 0.0 min | Records: 36,800
+2026-06-21 20:12:11 | INFO     | src.loaders.snowflake_loader   |   Database connection closed
+2026-06-21 20:15:25 | INFO     | src.loaders.snowflake_loader   | SnowflakeLoader initialized | mode=DEMO/SQLite
+2026-06-21 20:15:25 | INFO     | src.loaders.snowflake_loader   |   Connected to demo SQLite: /tmp/tmpssq5vi66/test_clinical.db
+2026-06-21 20:15:25 | INFO     | src.loaders.snowflake_loader   |   Database connection closed
+2026-06-21 20:15:25 | INFO     | src.loaders.snowflake_loader   | SnowflakeLoader initialized | mode=DEMO/SQLite
+2026-06-21 20:15:25 | INFO     | src.loaders.snowflake_loader   |   Connected to demo SQLite: /tmp/tmp499vgv8j/test_clinical.db
+2026-06-21 20:15:25 | INFO     | src.loaders.snowflake_loader   |   ✓ Loaded 1 rows → raw_patients
+2026-06-21 20:15:25 | INFO     | src.loaders.snowflake_loader   |   Database connection closed
+2026-06-21 20:15:25 | INFO     | src.loaders.snowflake_loader   | SnowflakeLoader initialized | mode=DEMO/SQLite
+2026-06-21 20:15:25 | INFO     | src.loaders.snowflake_loader   |   Connected to demo SQLite: /tmp/tmp6hfwso3f/test_clinical.db
+2026-06-21 20:15:25 | INFO     | src.loaders.snowflake_loader   |   ✓ Loaded 2 rows → raw_patients
+2026-06-21 20:15:25 | INFO     | src.loaders.snowflake_loader   |   Database connection closed
+2026-06-22 20:30:42 | INFO     | src.loaders.snowflake_loader   | SnowflakeLoader initialized | mode=DEMO/SQLite
+2026-06-22 20:30:42 | INFO     | src.loaders.snowflake_loader   |   Connected to demo SQLite: ./outputs/clinical_dw.db
+2026-06-22 20:30:42 | INFO     | src.loaders.snowflake_loader   |   ✓ Loaded 5,000 rows → raw_patients
+2026-06-22 20:30:42 | INFO     | src.loaders.snowflake_loader   |   ✓ Loaded 8,000 rows → raw_encounters
+2026-06-22 20:30:43 | INFO     | src.loaders.snowflake_loader   |   ✓ Loaded 15,000 rows → raw_labs
+2026-06-22 20:30:43 | INFO     | src.loaders.snowflake_loader   |   ✓ Loaded 8,000 rows → raw_billing
+2026-06-22 20:30:43 | INFO     | src.loaders.snowflake_loader   |   ✓ Loaded 12,000 rows → raw_appointments
+2026-06-22 20:30:43 | INFO     | src.loaders.snowflake_loader   |   ✓ Loaded 20,000 rows → raw_medications
+2026-06-22 20:30:43 | INFO     | src.loaders.snowflake_loader   |   ✓ Loaded 3,000 rows → raw_radiology
+2026-06-22 20:30:44 | INFO     | src.loaders.snowflake_loader   |   ✓ Loaded 50,000 rows → raw_icu_vitals
+2026-06-22 20:30:44 | INFO     | src.loaders.snowflake_loader   |   ✓ Loaded 500 rows → raw_staff
+2026-06-22 20:30:44 | INFO     | src.loaders.snowflake_loader   |   ✓ Loaded 8,000 rows → mart_patient_encounters
+2026-06-22 20:30:44 | INFO     | src.loaders.snowflake_loader   |   Pipeline run logged | Duration: 0.1 min | Records: 121,500
+2026-06-22 20:30:44 | INFO     | src.loaders.snowflake_loader   |   Database connection closed
+2026-06-22 20:31:07 | INFO     | src.loaders.snowflake_loader   | SnowflakeLoader initialized | mode=DEMO/SQLite
+2026-06-22 20:31:07 | INFO     | src.loaders.snowflake_loader   |   Connected to demo SQLite: /tmp/tmpavdaac_c/test_clinical.db
+2026-06-22 20:31:07 | INFO     | src.loaders.snowflake_loader   |   Database connection closed
+2026-06-22 20:31:07 | INFO     | src.loaders.snowflake_loader   | SnowflakeLoader initialized | mode=DEMO/SQLite
+2026-06-22 20:31:07 | INFO     | src.loaders.snowflake_loader   |   Connected to demo SQLite: /tmp/tmp15rtvczu/test_clinical.db
+2026-06-22 20:31:07 | INFO     | src.loaders.snowflake_loader   |   ✓ Loaded 1 rows → raw_patients
+2026-06-22 20:31:07 | INFO     | src.loaders.snowflake_loader   |   Database connection closed
+2026-06-22 20:31:07 | INFO     | src.loaders.snowflake_loader   | SnowflakeLoader initialized | mode=DEMO/SQLite
+2026-06-22 20:31:07 | INFO     | src.loaders.snowflake_loader   |   Connected to demo SQLite: /tmp/tmpo5wpj1z0/test_clinical.db
+2026-06-22 20:31:07 | INFO     | src.loaders.snowflake_loader   |   ✓ Loaded 2 rows → raw_patients
+2026-06-22 20:31:07 | INFO     | src.loaders.snowflake_loader   |   Database connection closed

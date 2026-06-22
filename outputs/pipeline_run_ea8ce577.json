@@ -1,0 +1,90 @@
+{
+  "run_id": "ea8ce577",
+  "start_time": "2026-06-21T20:11:13.657757",
+  "end_time": "2026-06-21T20:11:14.921610",
+  "status": "QUALITY_GATE_FAILED",
+  "source_metrics": {
+    "EHR": {
+      "records_extracted": 3900,
+      "duration_sec": 0.09,
+      "throughput_rps": 42855.0
+    },
+    "LAB": {
+      "records_extracted": 4500,
+      "duration_sec": 0.09,
+      "throughput_rps": 49929.0
+    },
+    "BILLING": {
+      "records_extracted": 2400,
+      "duration_sec": 0.08,
+      "throughput_rps": 30594.0
+    },
+    "SCHEDULING": {
+      "records_extracted": 3600,
+      "duration_sec": 0.05,
+      "throughput_rps": 66383.0
+    },
+    "PHARMACY": {
+      "records_extracted": 6000,
+      "duration_sec": 0.19,
+      "throughput_rps": 31642.0
+    },
+    "RADIOLOGY": {
+      "records_extracted": 900,
+      "duration_sec": 0.02,
+      "throughput_rps": 52004.0
+    },
+    "ICU_MONITOR": {
+      "records_extracted": 15000,
+      "duration_sec": 0.35,
+      "throughput_rps": 42565.0
+    },
+    "HR": {
+      "records_extracted": 500,
+      "duration_sec": 0.01,
+      "throughput_rps": 50228.0
+    }
+  },
+  "quality_metrics": {
+    "patients": {
+      "total_records": 1500,
+      "passed": 1500,
+      "failed": 0,
+      "quality_score": 1.0,
+      "quality_pct": "100.00%"
+    },
+    "encounters": {
+      "total_records": 2400,
+      "passed": 2100,
+      "failed": 300,
+      "quality_score": 0.875,
+      "quality_pct": "87.50%"
+    },
+    "labs": {
+      "total_records": 4500,
+      "passed": 3375,
+      "failed": 1125,
+      "quality_score": 0.75,
+      "quality_pct": "75.00%"
+    },
+    "billing": {
+      "total_records": 2400,
+      "passed": 2400,
+      "failed": 0,
+      "quality_score": 1.0,
+      "quality_pct": "100.00%"
+    },
+    "icu_vitals": {
+      "total_records": 15000,
+      "passed": 15000,
+      "failed": 0,
+      "quality_score": 1.0,
+      "quality_pct": "100.00%"
+    }
+  },
+  "performance_metrics": {
+    "transform_duration_sec": 0.32
+  },
+  "errors": [],
+  "overall_quality_score": 0.925
+}

@@ -1,0 +1,108 @@
+{
+  "run_id": "8cdcb085",
+  "start_time": "2026-06-21T20:12:09.458702",
+  "end_time": "2026-06-21T20:12:11.517087",
+  "status": "SUCCESS",
+  "source_metrics": {
+    "EHR": {
+      "records_extracted": 3900,
+      "duration_sec": 0.1,
+      "throughput_rps": 37839.0
+    },
+    "LAB": {
+      "records_extracted": 4500,
+      "duration_sec": 0.09,
+      "throughput_rps": 49718.0
+    },
+    "BILLING": {
+      "records_extracted": 2400,
+      "duration_sec": 0.08,
+      "throughput_rps": 30685.0
+    },
+    "SCHEDULING": {
+      "records_extracted": 3600,
+      "duration_sec": 0.06,
+      "throughput_rps": 61157.0
+    },
+    "PHARMACY": {
+      "records_extracted": 6000,
+      "duration_sec": 0.2,
+      "throughput_rps": 30537.0
+    },
+    "RADIOLOGY": {
+      "records_extracted": 900,
+      "duration_sec": 0.02,
+      "throughput_rps": 49405.0
+    },
+    "ICU_MONITOR": {
+      "records_extracted": 15000,
+      "duration_sec": 0.33,
+      "throughput_rps": 46138.0
+    },
+    "HR": {
+      "records_extracted": 500,
+      "duration_sec": 0.01,
+      "throughput_rps": 51536.0
+    }
+  },
+  "quality_metrics": {
+    "patients": {
+      "total_records": 1500,
+      "passed": 1500,
+      "failed": 0,
+      "quality_score": 1.0,
+      "quality_pct": "100.00%"
+    },
+    "encounters": {
+      "total_records": 2400,
+      "passed": 2400,
+      "failed": 0,
+      "quality_score": 1.0,
+      "quality_pct": "100.00%"
+    },
+    "labs": {
+      "total_records": 4500,
+      "passed": 4500,
+      "failed": 0,
+      "quality_score": 1.0,
+      "quality_pct": "100.00%"
+    },
+    "billing": {
+      "total_records": 2400,
+      "passed": 2400,
+      "failed": 0,
+      "quality_score": 1.0,
+      "quality_pct": "100.00%"
+    },
+    "icu_vitals": {
+      "total_records": 15000,
+      "passed": 15000,
+      "failed": 0,
+      "quality_score": 1.0,
+      "quality_pct": "100.00%"
+    }
+  },
+  "performance_metrics": {
+    "transform_duration_sec": 0.37,
+    "warehouse_table_counts": {
+      "pipeline_runs": 0,
+      "raw_patients": 1500,
+      "raw_encounters": 2400,
+      "raw_labs": 4500,
+      "raw_billing": 2400,
+      "raw_appointments": 3600,
+      "raw_medications": 6000,
+      "raw_radiology": 900,
+      "raw_icu_vitals": 15000,
+      "raw_staff": 500,
+      "mart_patient_encounters": 2400
+    },
+    "total_duration_minutes": 0.03,
+    "total_records_processed": 36800,
+    "overall_quality_score": 1.0,
+    "sla_target_minutes": 22,
+    "sla_met": true
+  },
+  "errors": [],
+  "overall_quality_score": 1.0
+}

@@ -1,0 +1,92 @@
+version: 2
+
+sources:
+  - name: raw
+    database: CLINICAL_DW
+    schema: RAW
+    tables:
+      - name: raw_patients
+      - name: raw_encounters
+      - name: raw_labs
+      - name: raw_billing
+      - name: raw_icu_vitals
+
+models:
+  - name: stg_patients
+    description: "Staging model for patient demographics from EHR"
+    columns:
+      - name: patient_id
+        description: "Unique patient identifier"
+        tests:
+          - unique
+          - not_null
+      - name: mrn
+        description: "Medical Record Number (PHI masked)"
+        tests:
+          - unique
+          - not_null
+      - name: gender
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["MALE", "FEMALE", "OTHER", "UNKNOWN"]
+      - name: age_years
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 130
+      - name: insurance_type
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["MEDICARE", "MEDICAID", "BCBS", "AETNA", "UNITED", "CIGNA", "HUMANA", "SELF_PAY"]
+
+  - name: stg_encounters
+    description: "Staging model for clinical encounters"
+    columns:
+      - name: encounter_id
+        tests:
+          - unique
+          - not_null
+      - name: patient_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_patients')
+              field: patient_id
+      - name: encounter_type
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["INPATIENT", "OUTPATIENT", "ED", "TELEHEALTH"]
+      - name: los_days
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 365
+              where: "los_days IS NOT NULL"
+
+  - name: int_patient_encounters
+    description: "Enriched patient-encounter grain with labs and billing"
+    columns:
+      - name: encounter_id
+        tests:
+          - unique
+          - not_null
+      - name: encounter_risk_score
+        tests:
+          - accepted_values:
+              values: ["HIGH", "MEDIUM", "LOW"]
+
+  - name: mart_daily_census
+    description: "Gold layer daily hospital census for dashboards"
+    columns:
+      - name: census_date
+        tests:
+          - not_null
+      - name: avg_los_days
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 365

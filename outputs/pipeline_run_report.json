@@ -1,0 +1,36 @@
+{
+  "run_id": "e92bbe4b",
+  "status": "SUCCESS",
+  "started_at": "2026-06-22T20:30:36.656555",
+  "duration_minutes": 0.13,
+  "sla_target_minutes": 22,
+  "sla_met": true,
+  "total_records_extracted": 121500,
+  "overall_quality_score": 1.0,
+  "overall_quality_pct": "100.00%",
+  "sources_processed": 8,
+  "source_breakdown": {
+    "EHR_patients": 5000,
+    "EHR_encounters": 8000,
+    "Lab": 15000,
+    "Billing": 8000,
+    "Scheduling": 12000,
+    "Pharmacy": 20000,
+    "Radiology": 3000,
+    "ICU_vitals": 50000,
+    "HR": 500
+  },
+  "warehouse_table_counts": {
+    "pipeline_runs": 1,
+    "raw_patients": 5000,
+    "raw_encounters": 8000,
+    "raw_labs": 15000,
+    "raw_billing": 8000,
+    "raw_appointments": 12000,
+    "raw_medications": 20000,
+    "raw_radiology": 3000,
+    "raw_icu_vitals": 50000,
+    "raw_staff": 500,
+    "mart_patient_encounters": 8000
+  }
+}

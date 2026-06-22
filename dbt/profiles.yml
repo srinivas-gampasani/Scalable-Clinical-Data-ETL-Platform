@@ -1,0 +1,36 @@
+clinical_snowflake:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT', 'demo_account') }}"
+      user: "{{ env_var('SNOWFLAKE_USER', 'demo_user') }}"
+      password: "{{ env_var('SNOWFLAKE_PASSWORD', 'demo_password') }}"
+      role: "{{ env_var('SNOWFLAKE_ROLE', 'CLINICAL_ETL_ROLE') }}"
+      database: CLINICAL_DW
+      warehouse: CLINICAL_WH
+      schema: STAGING
+      threads: 4
+      client_session_keep_alive: false
+      query_tag: "clinical_etl_dbt"
+
+    prod:
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+      user: "{{ env_var('SNOWFLAKE_USER') }}"
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+      role: CLINICAL_ETL_ROLE_PROD
+      database: CLINICAL_DW_PROD
+      warehouse: CLINICAL_WH_PROD
+      schema: STAGING
+      threads: 8
+      client_session_keep_alive: false
+
+    # SQLite fallback for local demo (dbt-sqlite)
+    local:
+      type: sqlite
+      threads: 1
+      database: "outputs/clinical_dw.db"
+      schema: main
+      schemas_and_paths:
+        main: "outputs/clinical_dw.db"

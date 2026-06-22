@@ -1,0 +1,431 @@
+{
+  "run_timestamp": "2026-06-22T20:30:42.585220",
+  "threshold": 0.95,
+  "sources": {
+    "patients": {
+      "source": "patients",
+      "record_count": 5000,
+      "score": 1.0,
+      "score_pct": "100.00%",
+      "gate_passed": true,
+      "checks": [
+        {
+          "check": "not_null::patient_id",
+          "status": "PASS",
+          "details": {
+            "null_count": 0,
+            "null_pct": "0.00%",
+            "total": 5000
+          },
+          "timestamp": "2026-06-22T20:30:42.585739"
+        },
+        {
+          "check": "not_null::mrn",
+          "status": "PASS",
+          "details": {
+            "null_count": 0,
+            "null_pct": "0.00%",
+            "total": 5000
+          },
+          "timestamp": "2026-06-22T20:30:42.586345"
+        },
+        {
+          "check": "unique::patient_id",
+          "status": "PASS",
+          "details": {
+            "duplicate_count": 0,
+            "total": 5000
+          },
+          "timestamp": "2026-06-22T20:30:42.586970"
+        },
+        {
+          "check": "unique::mrn",
+          "status": "PASS",
+          "details": {
+            "duplicate_count": 0,
+            "total": 5000
+          },
+          "timestamp": "2026-06-22T20:30:42.587738"
+        },
+        {
+          "check": "in_set::gender",
+          "status": "PASS",
+          "details": {
+            "invalid_count": 0,
+            "invalid_pct": "0.000%",
+            "sample_invalids": []
+          },
+          "timestamp": "2026-06-22T20:30:42.588548"
+        },
+        {
+          "check": "not_null::zip_code",
+          "status": "PASS",
+          "details": {
+            "null_count": 0,
+            "null_pct": "0.00%",
+            "total": 5000
+          },
+          "timestamp": "2026-06-22T20:30:42.588909"
+        },
+        {
+          "check": "not_null::insurance_type",
+          "status": "PASS",
+          "details": {
+            "null_count": 0,
+            "null_pct": "0.00%",
+            "total": 5000
+          },
+          "timestamp": "2026-06-22T20:30:42.589213"
+        },
+        {
+          "check": "date_range::dob",
+          "status": "PASS",
+          "details": {
+            "null_dates": 0,
+            "future_dates": 0,
+            "old_dates": 0
+          },
+          "timestamp": "2026-06-22T20:30:42.595435"
+        },
+        {
+          "check": "range::age_years[0,130]",
+          "status": "PASS",
+          "details": {
+            "violation_count": 0,
+            "violation_pct": "0.000%"
+          },
+          "timestamp": "2026-06-22T20:30:42.596315"
+        }
+      ],
+      "checks_passed": 9,
+      "checks_total": 9
+    },
+    "encounters": {
+      "source": "encounters",
+      "record_count": 8000,
+      "score": 1.0,
+      "score_pct": "100.00%",
+      "gate_passed": true,
+      "checks": [
+        {
+          "check": "not_null::encounter_id",
+          "status": "PASS",
+          "details": {
+            "null_count": 0,
+            "null_pct": "0.00%",
+            "total": 8000
+          },
+          "timestamp": "2026-06-22T20:30:42.597013"
+        },
+        {
+          "check": "not_null::patient_id",
+          "status": "PASS",
+          "details": {
+            "null_count": 0,
+            "null_pct": "0.00%",
+            "total": 8000
+          },
+          "timestamp": "2026-06-22T20:30:42.597644"
+        },
+        {
+          "check": "unique::encounter_id",
+          "status": "PASS",
+          "details": {
+            "duplicate_count": 0,
+            "total": 8000
+          },
+          "timestamp": "2026-06-22T20:30:42.598587"
+        },
+        {
+          "check": "referential_integrity::patient_id",
+          "status": "PASS",
+          "details": {
+            "orphan_count": 0,
+            "orphan_pct": "0.000%"
+          },
+          "timestamp": "2026-06-22T20:30:42.600723"
+        },
+        {
+          "check": "in_set::encounter_type",
+          "status": "PASS",
+          "details": {
+            "invalid_count": 0,
+            "invalid_pct": "0.000%",
+            "sample_invalids": []
+          },
+          "timestamp": "2026-06-22T20:30:42.601744"
+        },
+        {
+          "check": "date_range::admit_datetime",
+          "status": "PASS",
+          "details": {
+            "null_dates": 0,
+            "future_dates": 0,
+            "old_dates": 0
+          },
+          "timestamp": "2026-06-22T20:30:42.608706"
+        },
+        {
+          "check": "not_null::primary_diagnosis_icd10",
+          "status": "PASS",
+          "details": {
+            "null_count": 0,
+            "null_pct": "0.00%",
+            "total": 8000
+          },
+          "timestamp": "2026-06-22T20:30:42.609213"
+        },
+        {
+          "check": "range::los_days[0,365]",
+          "status": "PASS",
+          "details": {
+            "violation_count": 0,
+            "violation_pct": "0.000%"
+          },
+          "timestamp": "2026-06-22T20:30:42.610248"
+        }
+      ],
+      "checks_passed": 8,
+      "checks_total": 8
+    },
+    "labs": {
+      "source": "labs",
+      "record_count": 15000,
+      "score": 1.0,
+      "score_pct": "100.00%",
+      "gate_passed": true,
+      "checks": [
+        {
+          "check": "not_null::lab_result_id",
+          "status": "PASS",
+          "details": {
+            "null_count": 0,
+            "null_pct": "0.00%",
+            "total": 15000
+          },
+          "timestamp": "2026-06-22T20:30:42.611790"
+        },
+        {
+          "check": "not_null::patient_id",
+          "status": "PASS",
+          "details": {
+            "null_count": 0,
+            "null_pct": "0.00%",
+            "total": 15000
+          },
+          "timestamp": "2026-06-22T20:30:42.613190"
+        },
+        {
+          "check": "not_null::loinc_code",
+          "status": "PASS",
+          "details": {
+            "null_count": 0,
+            "null_pct": "0.00%",
+            "total": 15000
+          },
+          "timestamp": "2026-06-22T20:30:42.614017"
+        },
+        {
+          "check": "referential_integrity::patient_id",
+          "status": "PASS",
+          "details": {
+            "orphan_count": 0,
+            "orphan_pct": "0.000%"
+          },
+          "timestamp": "2026-06-22T20:30:42.617155"
+        },
+        {
+          "check": "in_set::abnormal_flag",
+          "status": "PASS",
+          "details": {
+            "invalid_count": 0,
+            "invalid_pct": "0.000%",
+            "sample_invalids": []
+          },
+          "timestamp": "2026-06-22T20:30:42.618251"
+        },
+        {
+          "check": "date_range::collected_datetime",
+          "status": "PASS",
+          "details": {
+            "null_dates": 0,
+            "future_dates": 0,
+            "old_dates": 0
+          },
+          "timestamp": "2026-06-22T20:30:42.626524"
+        },
+        {
+          "check": "date_range::resulted_datetime",
+          "status": "PASS",
+          "details": {
+            "null_dates": 0,
+            "future_dates": 0,
+            "old_dates": 0
+          },
+          "timestamp": "2026-06-22T20:30:42.634640"
+        },
+        {
+          "check": "range::tat_hours[0,168]",
+          "status": "PASS",
+          "details": {
+            "violation_count": 0,
+            "violation_pct": "0.000%"
+          },
+          "timestamp": "2026-06-22T20:30:42.636112"
+        }
+      ],
+      "checks_passed": 8,
+      "checks_total": 8
+    },
+    "billing": {
+      "source": "billing",
+      "record_count": 8000,
+      "score": 1.0,
+      "score_pct": "100.00%",
+      "gate_passed": true,
+      "checks": [
+        {
+          "check": "not_null::claim_id",
+          "status": "PASS",
+          "details": {
+            "null_count": 0,
+            "null_pct": "0.00%",
+            "total": 8000
+          },
+          "timestamp": "2026-06-22T20:30:42.636931"
+        },
+        {
+          "check": "not_null::patient_id",
+          "status": "PASS",
+          "details": {
+            "null_count": 0,
+            "null_pct": "0.00%",
+            "total": 8000
+          },
+          "timestamp": "2026-06-22T20:30:42.637839"
+        },
+        {
+          "check": "not_null::cpt_code",
+          "status": "PASS",
+          "details": {
+            "null_count": 0,
+            "null_pct": "0.00%",
+            "total": 8000
+          },
+          "timestamp": "2026-06-22T20:30:42.638283"
+        },
+        {
+          "check": "range::charge_amount[0,1000000]",
+          "status": "PASS",
+          "details": {
+            "violation_count": 0,
+            "violation_pct": "0.000%"
+          },
+          "timestamp": "2026-06-22T20:30:42.639270"
+        },
+        {
+          "check": "in_set::claim_status",
+          "status": "PASS",
+          "details": {
+            "invalid_count": 0,
+            "invalid_pct": "0.000%",
+            "sample_invalids": []
+          },
+          "timestamp": "2026-06-22T20:30:42.640199"
+        },
+        {
+          "check": "not_null::payer_name",
+          "status": "PASS",
+          "details": {
+            "null_count": 0,
+            "null_pct": "0.00%",
+            "total": 8000
+          },
+          "timestamp": "2026-06-22T20:30:42.640763"
+        }
+      ],
+      "checks_passed": 6,
+      "checks_total": 6
+    },
+    "icu_vitals": {
+      "source": "icu_vitals",
+      "record_count": 50000,
+      "score": 1.0,
+      "score_pct": "100.00%",
+      "gate_passed": true,
+      "checks": [
+        {
+          "check": "not_null::vital_id",
+          "status": "PASS",
+          "details": {
+            "null_count": 0,
+            "null_pct": "0.00%",
+            "total": 50000
+          },
+          "timestamp": "2026-06-22T20:30:42.647471"
+        },
+        {
+          "check": "not_null::patient_id",
+          "status": "PASS",
+          "details": {
+            "null_count": 0,
+            "null_pct": "0.00%",
+            "total": 50000
+          },
+          "timestamp": "2026-06-22T20:30:42.649569"
+        },
+        {
+          "check": "not_null::timestamp",
+          "status": "PASS",
+          "details": {
+            "null_count": 0,
+            "null_pct": "0.00%",
+            "total": 50000
+          },
+          "timestamp": "2026-06-22T20:30:42.649783"
+        },
+        {
+          "check": "range::heart_rate[20,250]",
+          "status": "PASS",
+          "details": {
+            "violation_count": 0,
+            "violation_pct": "0.000%"
+          },
+          "timestamp": "2026-06-22T20:30:42.698361"
+        },
+        {
+          "check": "range::systolic_bp[40,280]",
+          "status": "PASS",
+          "details": {
+            "violation_count": 0,
+            "violation_pct": "0.000%"
+          },
+          "timestamp": "2026-06-22T20:30:42.720054"
+        },
+        {
+          "check": "range::spo2[50,100]",
+          "status": "PASS",
+          "details": {
+            "violation_count": 0,
+            "violation_pct": "0.000%"
+          },
+          "timestamp": "2026-06-22T20:30:42.741671"
+        },
+        {
+          "check": "range::temperature_celsius[28,44]",
+          "status": "PASS",
+          "details": {
+            "violation_count": 0,
+            "violation_pct": "0.000%"
+          },
+          "timestamp": "2026-06-22T20:30:42.763197"
+        }
+      ],
+      "checks_passed": 7,
+      "checks_total": 7
+    }
+  },
+  "overall_score": 1.0,
+  "gate_passed": true,
+  "overall_score_pct": "100.00%"
+}
